@@ -28,6 +28,9 @@
     "locker-e2e": {
       "tags": [],
       "implicitDependencies": ["locker"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
