@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LockerContainer = styled.div`
+export const LockerPageContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100vw;

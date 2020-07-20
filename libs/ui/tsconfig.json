@@ -11,6 +11,15 @@
     "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
     "../../node_modules/@nrwl/react/typings/image.d.ts"
   ],
-  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "../../apps/locker/src/app/components/locker/item-type-selector/item-type-selector.styles.tsx",
+    "../../apps/locker/src/app/components/locker/locker-content/locker-content.styles.tsx",
+    "../../apps/locker/src/app/components/locker/locker-header/locker-header.styles.tsx",
+    "../../apps/locker/src/app/components/locker/locker-input/locker-input.styles.tsx"
+  ],
   "exclude": ["./jest.config.js"]
 }
