@@ -7,4 +7,5 @@ export const StyledSidebar = styled.div`
   position: absolute;
   left: 0;
   z-index: 1;
+  padding-right: 40px;
 `;

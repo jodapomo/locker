@@ -13,7 +13,7 @@ export const LockerHeader = () => (
   <LockerHeaderContainer>
     <UpperHeaderContainer>
       <LockerNameContainer>
-        <h1>Locker Name</h1>
+        <h1>Lockerj Nameg</h1>
       </LockerNameContainer>
       <LockerSearchInput />
     </UpperHeaderContainer>
