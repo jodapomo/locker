@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { LockerInputContainer } from './locker-input.styles';
+import * as S from './locker-input.styles';
 
 export const LockerInput = () => (
-  <LockerInputContainer>
+  <S.Container>
     <h1>Input</h1>
-  </LockerInputContainer>
+  </S.Container>
 );
 
 export default LockerInput;

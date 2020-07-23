@@ -1,11 +1,48 @@
 import React from 'react';
 
-import { ItemTypeSelectorContainer } from './item-type-selector.styles';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+
+import ItemTypeOption from './item-type-option/item-type-option';
+import * as S from './item-type-selector.styles';
+
+interface ItemType<IconType> {
+  name: string;
+  label: string;
+  icon: IconType;
+}
+
+const itemsTypes: ItemType<IconProp>[] = [
+  {
+    name: 'text',
+    label: 'Text',
+    icon: 'font',
+  },
+  {
+    name: 'bookmark',
+    label: 'Bookmarks',
+    icon: 'link',
+  },
+  {
+    name: 'code',
+    label: 'Code',
+    icon: 'code',
+  },
+  {
+    name: 'file',
+    label: 'Files',
+    icon: 'file-alt',
+  },
+];
 
 export const ItemTypeSelector = () => (
-  <ItemTypeSelectorContainer>
-    <h2>Selector</h2>
-  </ItemTypeSelectorContainer>
+  <S.Container>
+    {itemsTypes.map(({ label, icon }, index) => (
+      <>
+        <ItemTypeOption name={label} icon={icon} />
+        {index !== itemsTypes.length - 1 && <S.Separator />}
+      </>
+    ))}
+  </S.Container>
 );
 
 export default ItemTypeSelector;

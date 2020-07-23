@@ -1,23 +1,23 @@
 import styled from 'styled-components';
 
-export const LockerHeaderContainer = styled.div`
+export const Container = styled.div`
   /* background: #9bdb4d; */
   width: 100%;
-  height: 90px;
+  height: 100px;
   padding: 10px;
   display: flex;
   flex-flow: column;
   align-items: center;
+  position: relative;
 `;
 
-export const UpperHeaderContainer = styled.div`
+export const UpperContainer = styled.div`
   height: 50px;
   width: 100%;
-  margin-bottom: 20px;
   display: flex;
 `;
 
-export const LockerNameContainer = styled.div`
+export const NameContainer = styled.div`
   width: 70%;
   height: 100%;
   padding-left: 10px;

@@ -3,22 +3,18 @@ import React from 'react';
 import ItemTypeSelector from '../item-type-selector/item-type-selector';
 
 import LockerSearchInput from './locker-search-input/locker-search-input';
-import {
-  LockerHeaderContainer,
-  LockerNameContainer,
-  UpperHeaderContainer,
-} from './locker-header.styles';
+import * as S from './locker-header.styles';
 
 export const LockerHeader = () => (
-  <LockerHeaderContainer>
-    <UpperHeaderContainer>
-      <LockerNameContainer>
+  <S.Container>
+    <S.UpperContainer>
+      <S.NameContainer>
         <h1>Lockerj Nameg</h1>
-      </LockerNameContainer>
+      </S.NameContainer>
       <LockerSearchInput />
-    </UpperHeaderContainer>
+    </S.UpperContainer>
     <ItemTypeSelector />
-  </LockerHeaderContainer>
+  </S.Container>
 );
 
 export default LockerHeader;

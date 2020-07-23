@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LockerContainer = styled.div`
+export const Container = styled.div`
   background: #1d2225;
   box-shadow: -3px 1px 5px 0px rgba(0, 0, 0, 0.5);
   width: calc(100% - 300px);

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { StyledSidebar } from './sidebar.styles';
+import * as S from './sidebar.styles';
 
 export const Sidebar = () => (
-  <StyledSidebar>
+  <S.Container>
     <h1>Sidebar</h1>
-  </StyledSidebar>
+  </S.Container>
 );
 
 export default Sidebar;

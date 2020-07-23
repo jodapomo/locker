@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledSidebar = styled.div`
+export const Container = styled.div`
   background: #e8e8e8;
   width: 340px;
   height: 100%;

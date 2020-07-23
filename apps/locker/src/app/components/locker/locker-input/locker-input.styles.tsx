@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LockerInputContainer = styled.div`
+export const Container = styled.div`
   background: #383838;
   width: 100%;
   height: 100px;
