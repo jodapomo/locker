@@ -10,10 +10,5 @@ export const Container = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-`;
-
-export const Separator = styled.div`
-  height: 100%;
-  background: #fff;
-  width: 1px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
 `;

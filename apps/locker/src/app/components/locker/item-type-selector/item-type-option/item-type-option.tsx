@@ -8,10 +8,11 @@ import * as S from './item-type-option.styles';
 type Props = {
   name: string;
   icon: IconProp;
+  active: boolean;
 };
 
-export const ItemTypeOption = ({ name, icon }: Props) => (
-  <S.Container>
+export const ItemTypeOption = ({ name, icon, active }: Props) => (
+  <S.Container active={active}>
     <FontAwesomeIcon icon={icon} />
     <span>{name}</span>
   </S.Container>

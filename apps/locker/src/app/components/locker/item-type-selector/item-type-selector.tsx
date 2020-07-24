@@ -37,10 +37,7 @@ const itemsTypes: ItemType<IconProp>[] = [
 export const ItemTypeSelector = () => (
   <S.Container>
     {itemsTypes.map(({ label, icon }, index) => (
-      <>
-        <ItemTypeOption name={label} icon={icon} />
-        {index !== itemsTypes.length - 1 && <S.Separator />}
-      </>
+      <ItemTypeOption active={index === 2} name={label} icon={icon} />
     ))}
   </S.Container>
 );
