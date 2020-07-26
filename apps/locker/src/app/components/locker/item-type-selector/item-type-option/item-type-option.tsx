@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +11,11 @@ type Props = {
   active: boolean;
 };
 
-export const ItemTypeOption = ({ name, icon, active }: Props) => (
+export const ItemTypeOption: FunctionComponent<Props> = ({
+  name,
+  icon,
+  active,
+}) => (
   <S.Container active={active}>
     <FontAwesomeIcon icon={icon} />
     <span>{name}</span>

@@ -44,7 +44,9 @@
           ["^.+\\.s?css$"]
         ]
       }
-    ]
+    ],
+    "object-shorthand": ["error", "always", { "ignoreConstructors": true }],
+    "arrow-parens": ["error", "as-needed"]
   },
   "overrides": [
     {

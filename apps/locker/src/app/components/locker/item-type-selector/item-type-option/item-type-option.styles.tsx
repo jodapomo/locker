@@ -1,4 +1,4 @@
-import { darken, lighten } from 'polished';
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 const activeColor = '#7e8087';
@@ -22,7 +22,7 @@ export const Container = styled.div.attrs(
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${(props) => props.backgroundColor};
+  background: ${props => props.backgroundColor};
   font-size: 20px;
   cursor: ${({ active }) => (active ? 'default' : 'pointer')};
   transition: all 0.2s ease-in-out;
