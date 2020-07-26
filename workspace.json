@@ -71,7 +71,6 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/locker/jest.config.js",
-            "tsConfig": "apps/locker/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }
@@ -126,7 +125,6 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/ui/jest.config.js",
-            "tsConfig": "libs/ui/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }

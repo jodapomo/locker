@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react",
     "allowJs": true,
@@ -7,16 +7,15 @@
     "allowSyntheticDefaultImports": true,
     "types": ["node", "jest"]
   },
-  "files": [
-    "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
-    "../../node_modules/@nrwl/react/typings/image.d.ts"
-  ],
-  "include": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/app/components/locker/locker-header/locker-header.styles.sc"
-  ],
-  "exclude": ["./jest.config.js"]
+  "files": [],
+  "include": [],
+  "exclude": ["./jest.config.js"],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
 }
