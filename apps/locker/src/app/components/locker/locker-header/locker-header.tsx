@@ -1,7 +1,6 @@
 import React from 'react';
 
-import ItemTypeSelector from '../item-type-selector/item-type-selector';
-
+import ItemTypeSelector from './item-type-selector/item-type-selector';
 import LockerSearchInput from './locker-search-input/locker-search-input';
 import * as S from './locker-header.styles';
 

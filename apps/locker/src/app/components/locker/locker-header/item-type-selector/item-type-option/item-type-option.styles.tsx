@@ -1,7 +1,7 @@
 import { darken } from 'polished';
 import styled from 'styled-components';
 
-const activeColor = '#7e8087';
+const activeColor = '#383838';
 const defaultColor = '#559cad';
 
 type ContainerInputProps = {
@@ -35,7 +35,7 @@ export const Container = styled.div.attrs(
 
   &:active {
     background: ${({ active, backgroundColor }) =>
-      active ? activeColor : darken(0.03, backgroundColor)};
+      active ? activeColor : darken(0.1, backgroundColor)};
   }
 
   svg {
