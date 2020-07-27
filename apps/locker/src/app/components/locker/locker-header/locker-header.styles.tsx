@@ -4,7 +4,7 @@ export const Container = styled.div`
   /* background: #9bdb4d; */
   width: 100%;
   height: 100px;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -22,14 +22,15 @@ export const UpperContainer = styled.div`
 export const NameContainer = styled.div`
   width: 70%;
   height: 100%;
-  padding-left: 10px;
   padding-right: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 
   h1 {
+    line-height: 36px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-bottom: -5px;
   }
 `;

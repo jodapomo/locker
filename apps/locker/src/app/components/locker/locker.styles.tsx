@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import { Colors } from '@locker/ui';
+
 export const Container = styled.div`
-  background: #1d2225;
+  background: ${Colors.primary};
   box-shadow: -3px 1px 5px 0px rgba(0, 0, 0, 0.5);
   width: calc(100% - 270px);
   border-radius: 30px 0 0 30px;
@@ -10,5 +12,5 @@ export const Container = styled.div`
   overflow: hidden;
   display: flex;
   flex-flow: column;
-  color: #ffff;
+  color: ${Colors.text};
 `;
