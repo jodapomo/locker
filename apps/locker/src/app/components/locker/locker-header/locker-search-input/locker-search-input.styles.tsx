@@ -31,7 +31,7 @@ export const Container = styled.div`
       border-color: ${Colors.theme};
 
       &::placeholder {
-        color: ${transparentize(0.5, Colors.text)};
+        color: ${transparentize(0.5, Colors.lockerFg)};
       }
     }
 
@@ -51,7 +51,7 @@ export const IconContainer = styled.div`
   align-items: center;
   font-size: 20px;
   position: absolute;
-  color: ${Colors.text};
+  color: ${Colors.lockerFg};
   transition: all 0.2s ease-in-out;
   border: 2px solid ${Colors.primary};
   cursor: text;

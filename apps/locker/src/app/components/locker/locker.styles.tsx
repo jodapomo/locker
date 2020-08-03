@@ -4,7 +4,7 @@ import { Colors } from '@locker/ui';
 
 export const Container = styled.div`
   background: ${Colors.primary};
-  box-shadow: -3px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 1px 5px 0px rgba(0, 0, 0, 0.7);
   width: calc(100% - 270px);
   border-radius: 30px 0 0 30px;
   z-index: 2;
@@ -12,5 +12,5 @@ export const Container = styled.div`
   overflow: hidden;
   display: flex;
   flex-flow: column;
-  color: ${Colors.text};
+  color: ${Colors.lockerFg};
 `;

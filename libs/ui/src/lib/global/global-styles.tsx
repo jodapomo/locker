@@ -1,8 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { Colors } from '../enums';
+
 export const GlobalStyles = createGlobalStyle`
   body {
-    color: brown;
+    color: ${Colors.primary};
     font-family: 'Nunito', sans-serif;
   }
 `;
