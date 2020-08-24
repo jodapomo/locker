@@ -64,12 +64,13 @@ export const Username = styled.div`
   svg {
     font-size: 18px;
     display: inline-block;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 `;
 
 export const SignOutButton = styled.button`
   background: ${darken(0.08, Colors.sidebarBg)};
+  background: #ffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -79,7 +80,7 @@ export const SignOutButton = styled.button`
   align-items: center;
   padding: 5px 10px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
 
   span {
     font-size: 11px;
@@ -89,7 +90,7 @@ export const SignOutButton = styled.button`
   }
 
   &:hover {
-    background: ${darken(0.15, Colors.sidebarBg)};
+    background: ${darken(0.03, Colors.sidebarBg)};
   }
 
   &:active,
@@ -99,7 +100,7 @@ export const SignOutButton = styled.button`
 
   &:active {
     outline: none;
-    background: ${darken(0.2, Colors.sidebarBg)};
+    background: ${darken(0.1, Colors.sidebarBg)};
   }
 `;
 
@@ -108,9 +109,11 @@ export const GlobalSearchInputContainer = styled.div`
   padding: 0 10px;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 
   input {
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: #ffff;
+    box-shadow: inset -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -119,7 +122,17 @@ export const GlobalSearchInputContainer = styled.div`
     color: ${Colors.sidebarFg};
 
     &::placeholder {
+      transition: all 0.1s ease-in-out;
       color: ${darken(0.2, Colors.sidebarBg)};
+    }
+
+    &:focus {
+      &::placeholder {
+        color: ${darken(0.3, Colors.sidebarBg)};
+      }
+      & + svg {
+        color: ${darken(0.5, Colors.sidebarBg)};
+      }
     }
   }
 
@@ -128,5 +141,6 @@ export const GlobalSearchInputContainer = styled.div`
     margin-left: 5px;
     font-size: 20px;
     color: ${darken(0.2, Colors.sidebarBg)};
+    transition: all 0.1s ease-in-out;
   }
 `;

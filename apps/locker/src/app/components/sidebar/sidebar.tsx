@@ -24,8 +24,8 @@ export const Sidebar = () => (
     </S.UserInfoContainer>
 
     <S.GlobalSearchInputContainer>
-      <FontAwesomeIcon icon="globe-americas" />
       <input type="text" placeholder="Global Search" />
+      <FontAwesomeIcon icon="globe-americas" />
     </S.GlobalSearchInputContainer>
   </S.Container>
 );

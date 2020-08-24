@@ -18,7 +18,7 @@ export const Container = styled.div`
     width: 140px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid ${Colors.secondary};
+    border-bottom: 1px solid ${transparentize(0.5, Colors.lockerFg)};
     color: inherit;
     padding-left: 5px;
     padding-right: 40px;
@@ -31,12 +31,12 @@ export const Container = styled.div`
       border-color: ${Colors.theme};
 
       &::placeholder {
-        color: ${transparentize(0.5, Colors.lockerFg)};
+        color: ${transparentize(0.3, Colors.lockerFg)};
       }
     }
 
     &::placeholder {
-      color: ${Colors.secondary};
+      color: ${transparentize(0.5, Colors.lockerFg)};
     }
   }
 `;
