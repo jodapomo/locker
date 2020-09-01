@@ -6,10 +6,8 @@ import * as S from './locker-search-input.styles';
 
 export const LockerSearchInput = () => (
   <S.Container>
-    <input placeholder="Search" />
-    <S.IconContainer>
-      <FontAwesomeIcon icon="search" />
-    </S.IconContainer>
+    <input type="text" placeholder='Search inside "Lockerj Nameg"' />
+    <FontAwesomeIcon icon="search" />
   </S.Container>
 );
 

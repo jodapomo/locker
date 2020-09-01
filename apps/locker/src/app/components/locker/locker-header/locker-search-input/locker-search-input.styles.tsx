@@ -1,4 +1,5 @@
 import { transparentize } from 'polished';
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 import { Colors } from '@locker/ui';
@@ -6,24 +7,24 @@ import { Colors } from '@locker/ui';
 export const Container = styled.div`
   width: 30%;
   height: 100%;
-  overflow: hidden;
-  position: relative;
   display: flex;
   flex-flow: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
+  position: relative;
+  transition: all 0.2s ease-in-out;
 
   input {
-    font-size: 20px;
-    width: 140px;
-    background: transparent;
+    background: ${Colors.secondary};
+    font-size: 18px;
+    box-shadow: inset -1px 1px 2px 0px rgba(0, 0, 0, 0.7);
     border: none;
-    border-bottom: 1px solid ${transparentize(0.5, Colors.lockerFg)};
+    border-radius: 5px;
+    padding: 5px 10px;
+    padding-right: 35px;
+    width: 105px;
     color: inherit;
-    padding-left: 5px;
-    padding-right: 40px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:active,
     &:focus {
@@ -33,30 +34,24 @@ export const Container = styled.div`
       &::placeholder {
         color: ${transparentize(0.3, Colors.lockerFg)};
       }
+
+      & + svg {
+        color: ${Colors.lockerFg};
+      }
     }
 
     &::placeholder {
+      transition: all 0.1s ease-in-out;
       color: ${transparentize(0.5, Colors.lockerFg)};
     }
   }
-`;
 
-export const IconContainer = styled.div`
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  position: absolute;
-  color: ${Colors.lockerFg};
-  transition: all 0.2s ease-in-out;
-  border: 2px solid ${Colors.primary};
-  cursor: text;
-
-  &:hover {
-    border-color: ${Colors.theme};
+  svg {
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    font-size: 20px;
+    color: ${transparentize(0.3, Colors.lockerFg)};
+    transition: all 0.1s ease-in-out;
   }
 `;

@@ -31,6 +31,5 @@ export const NameContainer = styled.div`
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-bottom: -5px;
   }
 `;
