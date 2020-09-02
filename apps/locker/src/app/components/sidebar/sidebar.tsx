@@ -2,6 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import MyLockers from './my-lockers/my-lockers';
 import * as S from './sidebar.styles';
 
 export const Sidebar = () => (
@@ -23,10 +24,12 @@ export const Sidebar = () => (
       </S.SignOutButton>
     </S.UserInfoContainer>
 
-    <S.GlobalSearchInputContainer>
+    <S.SearchInputContainer>
       <input type="text" placeholder="Global Search" />
       <FontAwesomeIcon icon="globe-americas" />
-    </S.GlobalSearchInputContainer>
+    </S.SearchInputContainer>
+
+    <MyLockers />
   </S.Container>
 );
 

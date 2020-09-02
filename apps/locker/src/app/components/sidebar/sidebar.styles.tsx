@@ -104,12 +104,13 @@ export const SignOutButton = styled.button`
   }
 `;
 
-export const GlobalSearchInputContainer = styled.div`
+export const SearchInputContainer = styled.div`
   width: 100%;
   padding: 0 10px;
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
 
   input {
     background: #ffff;
